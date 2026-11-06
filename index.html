@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="tudo">
+        <div class="bloco1">
+            <h1>Calculadora de <span class="cor-diferente">IMC</span></h1>
+
+            <p id="mensagem">Digite seu peso e sua altura para calcular o <span class="cor-diferente">IMC</span>.</p>
+
+            <br>
+            
+            <div id = "calculo">
+                <label for="peso">Peso (kg) <span class="cor-diferente1">(ex: 70)</span> : </label>
+                <input id="peso" name="peso" type="number">
+
+                <label for="altura">Altura (m) <span class="cor-diferente1">(ex: 1.75)</span> : </label>
+                <input id="altura" name="altura" type="number">
+
+                <button id="botao">Calcular <span class="cor-diferente">IMC</span></button>
+            </div>
+       
+
+            <p id="resultado" aria-live="polite"></p>
+            <p id="imc" aria-live="polite"></p>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="bloco2">
+            <h2>O que é o <span class="cor-diferente">IMC</span>?</h2>
+            <p>O <span class="cor-diferente">Índice de Massa Corporal (IMC)</span> é uma medida utilizada para avaliar se uma pessoa está com peso adequado em relação à sua altura. Ele é calculado dividindo o peso da pessoa (em quilogramas) pelo quadrado da altura (em metros).</p>
+
+            <h3>Classificação do <span class="cor-diferente">IMC</span>:</h3>
+            <ul>
+                <li>Abaixo de 18,5: Abaixo do peso</li>
+                <li>18,5 - 24,9: Peso normal</li>
+                <li>25 - 29,9: Sobrepeso</li>
+                <li>30,0 - 34,9: Obesidade (grau I)</li>
+                <li>35,0 - 39,9: Obesidade (grau II)</li>
+                <li>40,0 ou mais: Obesidade (grau III)</li>
+
+                <p class="conta-formula">Calculado da seguinte forma: IMC = peso / (altura)² </p>
+            </ul>
+        </div>
+    </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
